@@ -1,0 +1,37 @@
+{
+  "name": "gulp-flow-js",
+  "version": "1.0.0",
+  "description": "JS bundle for gulp-flow.",
+  "main": "./src/index.js",
+  "keywords": [
+    "gulp",
+    "gulpfriendly",
+    "gulp-flow-bundle",
+    "workflow",
+    "task",
+    "plugin",
+    "bundle",
+    "uglify",
+    "js"
+  ],
+  "homepage": "https://github.com/gulp-flow/gulp-flow-js",
+  "author": {
+    "name": "Nicolas Tallefourtane",
+    "url": "http://nicolab.net"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gulp-flow/gulp-flow-js.git"
+  },
+  "bugs": "https://github.com/gulp-flow/gulp-flow-js/issues",
+  "dependencies": {
+    "gulp-uglify": "^1.5.1"
+  },
+  "peerDependencies": {
+    "gulp-flow": "1"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
