@@ -16,8 +16,20 @@ let {cfg, gp, pipes, utils} = flow;
 // Gulp plugins
 gp.uglify = require('gulp-uglify');
 
+if (!cfg.js) {
+  cfg.js = {};
+}
+
+cfg.js.jsMin = {
+  mangle : false, 
+  mangleProperties: true,
+  preserveComments: true
+};
+
 // pipes
 pipes.jsMin = utils.lazypipe()
-  .pipe(gp.uglify, {mangle : false, preserveComments: true})
+  .pipe(function() {
+    return gp.uglify(cfg.js.jsMin);
+  })
   .pipe(gp.header, cfg.banner)
 ;
