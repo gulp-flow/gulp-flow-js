@@ -20,10 +20,10 @@ npm install --save-dev gulp-flow-js
 ## Usage
 
 This bundle is preconfigured in `cfg.js`.
-`gulp-flow-js` adds `gp.uglify()` (gulp-uglify)
 
-And
-`pipes.jsMin()`
+`gulp-flow-js` adds:
+ * `gp.uglify()` (gulp-uglify)
+ * `pipes.jsMin()`
 
 ### Task
 A simple example:
