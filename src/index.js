@@ -22,8 +22,7 @@ if (!cfg.js) {
 
 cfg.js.jsMin = {
   mangle : false, 
-  mangleProperties: true,
-  preserveComments: true
+  mangleProperties: false
 };
 
 // pipes
